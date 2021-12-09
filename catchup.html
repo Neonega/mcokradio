@@ -201,15 +201,28 @@ li a:hover {
 </div>
 <div id="All" class="tabcontent">
   <h3>Programmes A - Z</h3>
-  <style>
+ <div class="thumnall">
+  <img src="AllAtSea.jpg" alt="All At Sea" style="width:213px">
+  <div class="container">
+  <p><a href="" style="color: white">All At Sea</a></p>
+  </div>
+ </div>
+ <div class="thumnall">
+  <img src="AungSan.jpg" alt="Aung San Suu Kyi - The Fall of an Icon" style="width:100%">
+  <div class="container">
+  <p><a href="" style="color: white">Aung San Suu Kyi - The Fall of an Icon</a></p>
+  </div>
+ </div>
+</div>
+<style>
 body {margin:25px;}
 
 div.thumnall {
+  display: inline-block;
   width: 213px;
   background-color: #474A2C;
   margin-bottom: 25px;
   margin-right: 10px;
-  float: left;
 }
 
 div.container {
@@ -220,30 +233,13 @@ div.container {
   padding: 10px 20px;
 }
 </style>
-</head>
-<body>
- <div class="thumnall">
-  <img src="AllAtSea.jpg" alt="All At Sea" style="width:213px">
-  <div class="container">
-  <p><a href="" style="color: white">All At Sea</a></p>
-  </div>
 
- <div class="thumnall">
-  <img src="AungSan.jpg" alt="Aung San Suu Kyi - The Fall of an Icon" style="width:100%">
-  <div class="container">
-  <p><a href="" style="color: white">Aung San Suu Kyi - The Fall of an Icon</a></p>
-  </div>
- </div>
- </div>
-</div>
-
-</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
   <li><a href="schedules.html">Schedules</a></li>
   </ul>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 a:link {
   text-decoration: none;
@@ -254,7 +250,7 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
@@ -305,7 +301,6 @@ body {font-family: Arial;}
   color: white;
 }
 </style>
-</head>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
