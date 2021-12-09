@@ -1,0 +1,166 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.C.O.K. Television</title>
+<style>
+.banner2 {
+  width: 600px;
+}
+.title a {
+  background-color: #9BC53D;
+  color: white;
+  display: block;
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+}
+}
+.banner2 a {
+  background-color: #123a;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner3 a {
+  background-color: #04080F;
+  color: white;
+  display: block;
+  padding: 34px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34;
+}
+.banner3small a {
+  background-color: #C3423F;
+  color: white;
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner1 a {
+  background-color: #123e;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;                                                                                                          
+  font-family: Arial, Helvetica, sans-serif;
+}
+.catchupbtn a {
+  width: 50px;
+  background-color: #EDCB96;
+  color: black;
+  display: block;
+  padding: 29px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 194px;
+  right: 7;
+  width: 50px;
+  height: 20px;
+}
+.prgmtitle a {
+  background-color: #100e;
+  color: white;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34;
+}
+.catchupdate a {
+  background-color: #110e;
+  width: 120;
+  color: white;
+  display: block;
+  padding: 14px;
+  text-align: left
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14;
+}
+</style>
+<style>
+#schedule {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#schedule td, #customers th {
+  border: 0px solid #ddd;
+  padding: 10px;
+}
+
+#schedule tr:nth-child(even){background-color: #f2f2f2;}
+
+#schedule th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #123e;
+  color: white;
+}
+  <menu>
+  <li><a href="catchup.html">Relives</a>
+  <li><a href="catchuprem.html">Featured</a>
+  <li><a href="catchupall.html">Programmes A - Z</a>
+  </menu>
+</style>
+<div class="title">
+  <a class="active">M.C.O.K. <i>Relive!</i></a>
+</div>
+<div class="banner3small">
+  <a class="active">In case you've missed your DX</a>
+</div>
+<style>
+ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FDE74C;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #04080F;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #D8876B;
+}
+</style>
+<div class="banner3">
+  <a class="active"></a>
+</div>
+</div>
+<div class="catchupdate">
+	<a>Wed 8th Dec 2021</a>
+</div>
+<div class="prgmtitle">
+	<a>M.C.O.K. Television on M.C.O.K. Radio 2 <p>(full broadcast)</p></a>
+</div>
+  <audio controls="controls">
+  <source src="https://docs.google.com/uc?export=download&id=1QU0vDFES4XykZy3IFHMPtV4BbaInoRk-">
+  </audio>
+  <div class="catchupbtn">
+  <a href="https://drive.google.com/file/d/1QU0vDFES4XykZy3IFHMPtV4BbaInoRk-/view" class="active"><b>Listen</b></a>
+  </div>
+  <ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+</html>
