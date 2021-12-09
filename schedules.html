@@ -74,7 +74,7 @@
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 50%;
   border: none;
   text-align: left;
   outline: none;
@@ -92,9 +92,42 @@
   background-color: #f1f1f1;
 }
 </style>
+<style>
+</style>
 <div class="title">
   <a>M.C.O.K. Radio and Television</a>
 </div>
+  <ul>
+  <li><a href="index.html">Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  <li><a href="catchup.html">Relive!</a></li>
+  </ul>
+<style>
+ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #199a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #65B5A0;
+}
+</style>
 <div class="header">
   <a>7-day Programme listings</a>
 </div>
@@ -472,7 +505,82 @@
   </tr>
  </table>
 </div>
-
+<button type="button" class="collapsible">Saturday 11th December 2021</button>
+<div class="content">
+<table id="schedule">
+  <tr>
+    <td>17:30</td>
+    <td>All At Sea ep8</td>
+  </tr>
+  <tr>
+    <td>18:00</td>
+    <td>Bad Education s01e06</td>
+  </tr>
+  <tr>
+    <td>18:30</td>
+    <td>Doctor Who s11e02</td>
+  </tr>
+  <tr>
+    <td>19:20</td>
+    <td>Dad's Army s03e10</td>
+  </tr>
+  <tr>
+    <td>19:50</td>
+    <td>Gavin + Stacy s02e03</td>
+  </tr>
+  <tr>
+    <td>20:20</td>
+    <td>Defending The Guilty s01e03</td>
+  </tr>
+  <tr>
+    <td>20:50</td>
+    <td>Bad Education s01e06 (replay)</td>
+  </tr>
+  <tr>
+    <td>21:20</td>
+    <td>Ghosts s03e04</td>
+  </tr>
+  <tr>
+    <td>21:50</td>
+    <td>All At Sea ep8 (replay)</td>
+  </tr>
+    <tr>
+    <td>22:20</td>
+    <td>Doctor Who s11e02 (replay)</td>
+  </tr>
+    <tr>
+    <td>23:10</td>
+    <td>All At Sea e06 (replay)</td>
+  </tr>
+    <tr>
+    <td>23:40</td>
+    <td>Masterchef - The Professionals s14e02 (replay)</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>00:10</td>
+    <td>Doctor Who s11e01 (replay)</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>01:13</td>
+    <td>Gavin + Stacy s02e03</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>01:43</td>
+    <td>Ghosts s03e03 (replay)</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>02:10</td>
+    <td>Music From Ceefax</td>
+  </tr>
+    <tr>
+    <td>05:00</td>
+    <td>Sign Off</td>
+  </tr>
+</div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -490,35 +598,6 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 </div>
-<style>
-.vertical-menu {
-  width: 500px;
-}
-
-.vertical-menu a {
-  background-color: #123e;
-  color: white;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #122e;
-}
-
-.vertical-menu a.active {
-  background-color: #052A6D;
-  color: white;
-}
-</style>
-<div class="title">
-  <a class="active">Site Navigation</a>
-</div>
-<div class="vertical-menu">
-  <a href="index.html">Home</a>
-  <a href="schedules.html" class="active">Schedules</a>
-  <a href="catchup.html">Relives</a>
 </html>
 </body>
 </html>

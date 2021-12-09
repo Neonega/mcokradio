@@ -7,7 +7,7 @@
   width: 600px;
 }
 .title a {
-  background-color: #188c;
+  background-color: #9BC53D;
   color: white;
   display: block;
   padding: 12px;
@@ -24,7 +24,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .banner3 a {
-  background-color: #123a;
+  background-color: #04080F;
   color: white;
   display: block;
   padding: 34px;
@@ -33,7 +33,7 @@
   font-size: 34;
 }
 .banner3small a {
-  background-color: #123a;
+  background-color: #C3423F;
   color: white;
   display: block;
   padding: 4px;
@@ -45,16 +45,58 @@
   color: white;
   display: block;
   padding: 12px;
-  text-decoration: none;
+  text-decoration: none;                                                                                                          
   font-family: Arial, Helvetica, sans-serif;
 }
 .catchupbtn a {
-  background-color: #100e;
-  color: white;
+  width: 50px;
+  background-color: #EDCB96;
+  color: black;
   display: block;
   padding: 29px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 424px;
+  right: 37;
+  width: 50px;
+  height: 20px;
+}
+.catchupbtn2 a {
+  width: 50px;
+  background-color: #EDCB96;
+  color: black;
+  display: block;
+  padding: 29px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 698px;
+  right: 37;
+  width: 50px;
+  height: 20px;
+}
+.prgmtitle a {
+  background-color: #100e;
+  color: white;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34;
+  margin-bottom: 10px;
+}
+.catchupdate a {
+  background-color: #110e;
+  width: 120;
+  color: white;
+  display: block;
+  padding: 14px;
+  text-align: left
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14;
 }
 </style>
 <style>
@@ -79,54 +121,208 @@
   color: white;
 }
 </style>
+ <!-- Tab links -->
+
 <div class="title">
-  <a class="active">M.C.O.K. Radio and Television</a>
-</div>
-<div class="banner1">
-  <a class="active">The Official website of 87.2 Mhz</a>
-</div>
-<div class="banner3">
-  <a class="active">"Relive!"</a>
+  <a class="active">M.C.O.K. <i>Relive!</i></a>
 </div>
 <div class="banner3small">
   <a class="active">In case you've missed your DX</a>
 </div>
-</div>
-<div class="catchupbtn">
-  <a href="https://drive.google.com/file/d/1QU0vDFES4XykZy3IFHMPtV4BbaInoRk-/view" class="active">Wed 8th Dec 2021</a>
-  </div>
 <style>
-.vertical-menu {
-  width: 500px;
+ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FDE74C;
 }
 
-.vertical-menu a {
-  background-color: #123e;
-  color: white;
+li {
+  float: left;
+}
+
+li a {
   display: block;
-  padding: 12px;
+  color: #04080F;
+  text-align: center;
+  padding: 8px;
   text-decoration: none;
 }
 
-.vertical-menu a:hover {
-  background-color: #122e;
+li a:hover {
+  background-color: #D8876B;
+}
+</style>
+<div class="banner3">
+  <a class="active"></a>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Relive</button>
+  <button class="tablinks" onclick="openCity(event, 'Rewatch')">Rewatch</button>
+  <button class="tablinks" onclick="openCity(event, 'All')">Programmes A - Z</button>
+</div>
+<body>
+<div id="Home" class="tabcontent">
+  <h3>Relive!</h3>
+ <div class="catchupdate">
+	<a>Thu 9th Dec 2021</a>
+  </div>
+ <div class="prgmtitle">
+	<a>M.C.O.K. Television on M.C.O.K. Radio 2 <p>(full broadcast)</p></a>
+   </div>
+ <div style="bottom: 50px;  right: 0; position:relative;">
+  <audio controls="controls">
+  <source src="">
+  </audio>
+ </div> 
+ <div class="catchupbtn">
+  <a href=""><b>Listen</b></a>
+ </div>
+ <div class="catchupdate">
+	<a>Wed 8th Dec 2021</a>
+ </div>
+ <div class="prgmtitle">
+	<a>M.C.O.K. Television on M.C.O.K. Radio 2 <p>(full broadcast)</p></a>
+ </div>
+ <div style="bottom: 50px;  right: 0; position:relative;">
+  <audio controls="controls">
+  <source src="https://docs.google.com/uc?export=download&id=1QU0vDFES4XykZy3IFHMPtV4BbaInoRk-">
+  </audio>
+ </div>
+ <div class="catchupbtn2">
+  <a href="https://drive.google.com/file/d/1QU0vDFES4XykZy3IFHMPtV4BbaInoRk-/view"><b>Listen</b></a>
+ </div>
+</div>
+<div id="Rewatch" class="tabcontent">
+  <h3>Rewatch</h3>
+  <p>Horrible His</p>
+</div>
+<div id="All" class="tabcontent">
+  <h3>Programmes A - Z</h3>
+  <style>
+body {margin:25px;}
+
+div.thumnall {
+  width: 213px;
+  background-color: #474A2C;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  float: left;
 }
 
-.vertical-menu a.active {
-  background-color: #04AA6D;
-  color: white;
+div.container {
+  font-size: 16;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px 20px;
 }
 </style>
 </head>
 <body>
+ <div class="thumnall">
+  <img src="AllAtSea.jpg" alt="All At Sea" style="width:213px">
+  <div class="container">
+  <p><a href="" style="color: white">All At Sea</a></p>
+  </div>
 
-<div class="title">
-  <a class="active">Site Navigation</a>
-</div>
-<div class="vertical-menu">
-  <a href="index.html">Home</a>
-  <a href="schedules.html">Schedules</a>
-  <a href="#"class="active">Relives</a>
+ <div class="thumnall">
+  <img src="AungSan.jpg" alt="Aung San Suu Kyi - The Fall of an Icon" style="width:100%">
+  <div class="container">
+  <p><a href="" style="color: white">Aung San Suu Kyi - The Fall of an Icon</a></p>
+  </div>
+ </div>
+ </div>
 </div>
 
+</body>
+  <ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+</style>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #5E8955;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0s;
+  font-size: 17px;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #5C9960;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #636940;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: px solid #ccc;
+  border-top: none;
+  background-color: #636940;
+  text-decoration: none;
+  color: white;
+}
+</style>
+</head>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
 </html>
