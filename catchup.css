@@ -1,0 +1,286 @@
+body {margin:25px;}
+
+.back {
+  background-color: #5E8955;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.backtoprgm {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #757575;;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #04080F;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #D8876B;
+}
+
+.collapsible {
+  background-color: #320F42;
+  color: White;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: #320F42;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #Brown;
+}
+
+.banner2 {
+  width: 600px;
+}
+
+.title b {
+  background-color: #5E173B;;
+  color: white;
+  display: block;
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+}
+
+.banner2 b {
+  background-color: #123a;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner3 b {
+  background-color: #04080F;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34;
+}
+.banner3small b {
+  background-color: #1A0303;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner3small w {
+  background-color: #1A0303;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner1 b {
+  background-color: #123e;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;                                                                                                          
+  font-family: Arial, Helvetica, sans-serif;
+}
+.catchupbtn a {
+  width: 50px;
+  background-color: #EDCB96;
+  color: black;
+  display: block;
+  padding: 29px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 374px;
+  right: 37;
+  width: 50px;
+  height: 20px;
+}
+.catchupbtn2 a {
+  width: 50px;
+  background-color: #EDCB96;
+  color: black;
+  display: block;
+  padding: 29px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 646px;
+  right: 37;
+  width: 50px;
+  height: 20px;
+}
+.catchupbtninde a {
+  background-color: #EDCB96;
+  color: black;
+  display: block;
+  padding: 29px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+  text-align: center;
+}
+.prgmtitle b {
+  background-color: #100e;
+  color: white;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34;
+  margin-bottom: 0px;
+}
+.catchupdate b {
+  background-color: #110e;
+  width: 130;
+  color: white;
+  display: block;
+  padding: 14px;
+  text-align: left
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14;
+}
+.greenbannersmall b {
+  background-color: #9BC53D;
+  color: white;
+  display: block;
+  padding: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15;
+}
+
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #5E2826;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0s;
+  font-size: 17px;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #DB5754;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #DB5754;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: px solid #ccc;
+  border-top: none;
+  background-color: #531D1C;
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*MCOK Episodes selections*/
+
+/* EP Thumbs */
+body {margin:25px;}
+
+p {
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		
+}
+
+div.thumnall {
+  display: inline-block;
+  width: 213px;
+  background-color: #474A2C;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+  
+div.container {
+  font-size: 16;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  padding: 0px 10px;
+}

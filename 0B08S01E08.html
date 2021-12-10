@@ -1,0 +1,80 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+<body style="background-color:#4f1313;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Back in Time for School - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you've missed your DX</b>
+</div>
+<button class="backtoprgm">
+	<a href="0B08.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Episode 8</b>
+</div>
+<img src="gfx/0B08S01E08.jpg" width="2000" height="500">
+<div class="banner3small">
+	<w style="padding-left: 12px;">Fifteen pupils and their teachers have embarked on an extraordinary time-travelling adventure through seven eras of British history. Starting out in the age of Empire in 1895, they have lived lessons, life and dinners all the way through to the end of the 1990s, with their school as their time machine. Now they are returning for one last adventure.</w>
+	<w style="padding-left: 12px;">In this final episode of the series, the class and teachers return to school for their very own reunion party, where they are joined by presenter Sara Cox and social historian Polly Russell. As pupils, teachers and families celebrate together, they reflect on over 100 years of time travel and explore how the legacy of the past lives on in the schools of today.</w>
+	<w style="padding-left: 12px;">But their journey isn’t over yet, as our intrepid class of pupils set off to explore what the future of the classroom might look like. They experience the cutting-edge possibilities of virtual classrooms and contend with the unsettling notion of lessons run by artificial intelligence.</w>
+	<w style="padding-left: 12px;">As they relive some of their favourite memories, from school dinners to weird and wonderful lessons, they compare how their historical experiences measure up to the present and the future.</w>
+	<w style="padding-left: 12px;">Will a modern school dinner ever match the joy they felt when helping themselves to chips, pizza, waffles and mash in the 1980s? Can a cross-country run ever be less traumatic, even when accompanied by pioneering tech? And can a simulation really make 21st-century teens fall in love with their history lessons?</w>
+	<w style="padding-left: 12px;">Life-changing memories are shared, and before the end of the party, the class join together for one final school photo.</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+<button type="button" class="collapsible">Listen</button>
+<div class="content">
+<iframe src="https://drive.google.com/file/d/1I3aqP1vkCHYDtEhaJR8-NYTS10-C0qkx/preview" width="auto" height="auto" allow="autoplay"></iframe>
+</div>
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
