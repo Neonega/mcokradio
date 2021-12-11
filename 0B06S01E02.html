@@ -1,11 +1,13 @@
 <html>
+
 <script src="catchup.js"></script> 
 <head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <link rel="stylesheet" href="catchup.css">
 </head>
 <body style="background-color:#4f1313;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bad Education Series 1:2. Sex Education - Relive!</title>
+<title>Bad Education Series S01E02: Sex Education - Relive!</title>
 <div class="title">
   <b class="active">M.C.O.K. <i>Relive!</i></b>
 </div>
@@ -22,16 +24,18 @@
 	<b>Sex Education</b>
 </div>
 <img src="gfx/0B06S01E02.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+            <source src="https://drive.google.com/uc?export=download&id=1JRT5Th0YRj2mn_gbxQFF-q9PDztFtSZy" type="audio/mpeg">
+			Your browser does not support the audio element.
+        </audio>
+</div>
 <div class="banner3small">
 	<w style="padding-left: 12px;">Abbey Grove School parents are worried about the impending arrival of the French exchange students, after Jean Claude and his French classmates ran riot leaving a wake of lovestruck teenagers behind them the previous year. This year, Fraser is determined to prove to the angry parents that he has got everything under control, especially with his right-hand man Alfie by his side. But is Alfie really the right man to entrust with a sex education class?</w>
 </div>
 <div class="banner3">
 	<b style="font-size: 16;">Availability: over a month</b>
 </div>
- <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=1JRT5Th0YRj2mn_gbxQFF-q9PDztFtSZy" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
   <li><a href="schedules.html">Schedules</a></li>
@@ -71,5 +75,11 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
 </body>
 </html>

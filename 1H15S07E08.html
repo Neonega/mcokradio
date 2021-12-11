@@ -1,6 +1,7 @@
 <html>
 <script src="catchup.js"></script> 
 <head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <link rel="stylesheet" href="catchup.css">
 </head>
 <body style="background-color:#4f1313;">
@@ -22,16 +23,18 @@
 	<b>8. Ruthless Rulers</b>
 </div>
 <img src="gfx/1H15S07E08.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=14lY8Y28ewvuKab3NdShn93Oni7CnU3XE" type="audio/mpeg">
+Your browser does not support the audio element.
+       </audio>
+</div>
 <div class="banner3small">
 	<w style="padding-left: 12px;">Get ready for some serious bad behaviour, as Horrible Histories brings you the most ruthless rulers of all time. Henry VIII is so demanding he has a brick wall built at his bedroom door every night, those vicious Vikings find that sorry seems to be the hardest word, hold your nose in Versailles because Louis XIV hasn't got any loos, and rock out with the Warlords from Hell - take it away Genghis and Vlad.</w>
 </div>
 <div class="banner3">
 	<b style="font-size: 16;">Availability: over a month</b>
-</div>
- <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=14lY8Y28ewvuKab3NdShn93Oni7CnU3XE" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+
 <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
   <li><a href="schedules.html">Schedules</a></li>
@@ -71,5 +74,12 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
 </body>
 </html>

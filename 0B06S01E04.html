@@ -1,11 +1,13 @@
 <html>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <script src="catchup.js"></script> 
 <head>
+
 <link rel="stylesheet" href="catchup.css">
 </head>
 <body style="background-color:#4f1313;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bad Education - Relive!</title>
+<title>Bad Education S01E04: School Trip - Relive!</title>
 <div class="title">
   <b class="active">M.C.O.K. <i>Relive!</i></b>
 </div>
@@ -22,16 +24,18 @@
 	<b>School Trip</b>
 </div>
 <img src="gfx/0B06S01E04.jpg" width="2000" height="500">
+<div class="ready-player-1">
+  <audio>
+  <source src="https://drive.google.com/uc?export=download&id=16dnUUWnKuwOKOIv0oOM4l8WyZJ_-zQed" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
 <div class="banner3small">
 	<w style="padding-left: 12px;">It is the day of the Abbey Grove school field trips and Alfie and Miss Gulliver are escorting their pupils to a petting zoo and ink museum. Fraser takes his group of pupils to a 'poetry recital' which turns out to be a rap battle, and Miss Pickwell decides to take her class to an abattoir. Things go from bad to worse when Alfie takes an opportunity to hijack his field trip and turn it into a Bear Grylls-esque survival course.</w>
 </div>
 <div class="banner3">
 	<b style="font-size: 16;">Availability: over a month</b>
 </div>
- <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=16dnUUWnKuwOKOIv0oOM4l8WyZJ_-zQed" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 
 <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
@@ -72,5 +76,11 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
 </body>
 </html>

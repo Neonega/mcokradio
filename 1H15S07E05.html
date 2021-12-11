@@ -1,6 +1,7 @@
 <html>
 <script src="catchup.js"></script> 
 <head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <link rel="stylesheet" href="catchup.css">
 </head>
 <body style="background-color:#4f1313;">
@@ -22,16 +23,19 @@
 	<b>5. Heroic Heroes and Villainous Villains</b>
 </div>
 <img src="gfx/1H15S07E05.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=1c-aI9b5ktf4Z5IEkXjXs0rNi9H3q4TVb" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
 <div class="banner3small">
 	<w style="padding-left: 12px;">Horrible Histories takes a look at the world's greatest heroes and villains. On the heroic side, we have everything from Douglas Bader's frequent escapes to the first men on the moon and Martin Luther King Jr, whereas our more villainous side contains Al Capone and Rameses the Great, and Steve Biceps brings us History's Deadly 60..</w>
 </div>
 <div class="banner3">
 	<b style="font-size: 16;">Availability: over a month</b>
 </div>
- <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=1c-aI9b5ktf4Z5IEkXjXs0rNi9H3q4TVb" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+
 <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
   <li><a href="schedules.html">Schedules</a></li>
@@ -71,5 +75,12 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
 </body>
 </html>
