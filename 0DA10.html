@@ -1,0 +1,75 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+<body style="background-color:4f1313;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dad's Army - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you've missed your DX</b>
+</div>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Dad's Army</b>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="menu(event, 'series1')" id="defaultOpen">Series 1</button>
+</div>
+<div id="series1" class="tabcontent">
+ <div class="thumnall">
+  <img src="gfx/0DA10S03E10.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0DA10S03E10.html" style="color: white"><b>10. Menace from the Deep</b></a></p>
+  <p>Wartime sitcom. The Home Guard are given full responsibility for the defence of Walmington-on-Sea for one week. </p>
+  </div>
+</div>
+
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
