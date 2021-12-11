@@ -1,4 +1,5 @@
 <html>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <script src="catchup.js"></script> 
 <head>
 <link rel="stylesheet" href="catchup.css">
@@ -22,6 +23,11 @@
 	<b>Episode 8</b>
 </div>
 <img src="gfx/0B08S01E08.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio controls">
+            <source src="https://drive.google.com/uc?export=download&id=1I3aqP1vkCHYDtEhaJR8-NYTS10-C0qkx" type="audio/mpeg">
+        </audio>
+</div>
 <div class="banner3small">
 	<w style="padding-left: 12px;">Fifteen pupils and their teachers have embarked on an extraordinary time-travelling adventure through seven eras of British history. Starting out in the age of Empire in 1895, they have lived lessons, life and dinners all the way through to the end of the 1990s, with their school as their time machine. Now they are returning for one last adventure.</w>
 	<w style="padding-left: 12px;">In this final episode of the series, the class and teachers return to school for their very own reunion party, where they are joined by presenter Sara Cox and social historian Polly Russell. As pupils, teachers and families celebrate together, they reflect on over 100 years of time travel and explore how the legacy of the past lives on in the schools of today.</w>
@@ -32,10 +38,6 @@
 </div>
 <div class="banner3">
 	<b style="font-size: 16;">Availability: over a month</b>
-</div>
-<button type="button" class="collapsible">Listen</button>
-<div class="content">
-<iframe src="https://drive.google.com/file/d/1I3aqP1vkCHYDtEhaJR8-NYTS10-C0qkx/preview" width="340" height="auto" allow="autoplay"></iframe>
 </div>
 <ul>
   <li><a href="index.html">M.C.O.K. Home</a>
@@ -76,5 +78,11 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
 </body>
 </html>
