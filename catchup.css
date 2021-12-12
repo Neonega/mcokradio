@@ -15,6 +15,8 @@ body {background-color:#4f1313
   display: inline-block;
   margin-top: 16px;
   font-size: 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .backtoprgm {
@@ -27,6 +29,8 @@ body {background-color:#4f1313
   display: inline-block;
   margin-top: 16px;
   font-size: 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 img {
@@ -213,8 +217,6 @@ li a:hover {
   overflow: hidden;
   border: 0px solid #ccc;
   background-color: #5E2826;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
 }
 
 /* Style the buttons inside the tab */
