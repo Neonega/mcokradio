@@ -1,4 +1,7 @@
-body {margin:25px;}
+body 
+{max-width: 976px;
+margin: 0 Auto;
+padding: 16px}
 
 .back {
   background-color: #5E8955;
@@ -261,7 +264,6 @@ a:active {
 /*MCOK Episodes selections*/
 
 /* EP Thumbs */
-body {margin:25px;}
 
 p {
 		color: white;
