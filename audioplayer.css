@@ -148,7 +148,7 @@
         bottom: -164px;
         left: -3px; }
   .audioplayer .download {
-    display: none;
+    display: flex;
     margin-left: 16px;
     cursor: pointer;
     outline: none; }
