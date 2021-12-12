@@ -15,10 +15,9 @@
 -->
 <!doctype html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="audioplayer.css">
-<link rel="stylesheet" href="catchup.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mediabuffer Demo</title>
 		<style>
 			*{padding:0;margin:0;box-sizing:border-box;}
 			body{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;width:80%;max-width:700px;margin:0 auto;padding:50px;}
@@ -38,7 +37,7 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" />
 	</head>
 	
-		<div id="ready-player-1">
+		<div id="audio_container">
 			<h2>Audio</h2>
 			<p class="status"><a class="button" id="audio-button">Load audio</a> <span id="audio-progress-container"></span></p>
 			<audio id="audio" controls preload="none">
@@ -73,6 +72,5 @@
 			}			
 			
 		</script>
-		
 	</body>
 </html>
