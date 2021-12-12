@@ -1,7 +1,9 @@
 body 
 {max-width: 976px;
 margin: 0 Auto;
-padding: 16px}
+padding: 16px;
+background-color:4f1313;
+}
 
 .back {
   background-color: #5E8955;

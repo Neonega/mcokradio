@@ -1,39 +1,37 @@
 <html>
 <script src="catchup.js"></script> 
 <head>
-<link rel="stylesheet" type="text/css" href="audioplayer.css">
 <link rel="stylesheet" href="catchup.css">
 </head>
-
+<body style="background-color:4f1313;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Horrible Histories S07:5. Heroic Heroes and Villainous Villains - Relive!</title>
+<title>EastEnders - Relive!</title>
 <div class="title">
   <b class="active">M.C.O.K. <i>Relive!</i></b>
 </div>
 <div class="banner3small">
   <b class="active">In case you've missed your DX</b>
 </div>
-<button class="backtoprgm">
-	<a href="1H15.html" style="color: white; text-decoration: none;">Back</a>
-</button>
 <button class="back">
 	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
 </button>	
 <div class="prgmtitle">
-	<b>5. Heroic Heroes and Villainous Villains</b>
+	<b>EastEnders</b>
 </div>
-<img src="gfx/1H15S07E05.jpg" width="2000" height="500">
-<div class="ready-player-1">
-        <audio>
-  <source src="https://drive.google.com/uc?export=download&id=1c-aI9b5ktf4Z5IEkXjXs0rNi9H3q4TVb" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+<div class="tab">
+  <button class="tablinks" onclick="menu(event, '2019')" id="defaultOpen">2019</button>
 </div>
-<div class="banner3small">
-	<w style="padding-left: 12px;">Horrible Histories takes a look at the world's greatest heroes and villains. On the heroic side, we have everything from Douglas Bader's frequent escapes to the first men on the moon and Martin Luther King Jr, whereas our more villainous side contains Al Capone and Rameses the Great, and Steve Biceps brings us History's Deadly 60..</w>
+
+<div id="2019" class="tabcontent">
+
+ <div class="thumnall">
+  <img src="gfx/0E996010.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0E996010.html" style="color: white"><b>2019-10-14</b></a></p>
+  <p>Martin feels the pressure as Ben’s demands continue to grow, Stuart and Rainie have an ultimatum for Kathy, and Tiffany and Keegan make a decision about their future.</p>
+  </div>
 </div>
-<div class="banner3">
-	<b style="font-size: 16;">Availability: over a month</b>
+
 </div>
 
 <ul>
@@ -75,12 +73,5 @@ function menu(evt, selections) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-    <script src="audioplayer.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
-        });
-    </script>
-
 </body>
 </html>
