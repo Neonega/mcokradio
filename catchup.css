@@ -213,6 +213,38 @@ li a:hover {
   font-size: 15;
 }
 
+.nav_ep_previous {
+background-color: #1a1f39;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+border-top-left-radius: 0px;
+width: 50%;
+display: inline-block;
+flex-direction: row;
+margin-right: -4px;
+padding-top: 0px;
+}
+
+.nav_ep_next {
+background-color: #33376c;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+border-top-left-radius: 0px;
+width: 50%;
+display: inline-block;
+flex-direction: row;
+margin-right: -4px;
+padding-top: 0px;
+}
+
 .tab {
   overflow: hidden;
   border: 0px solid #ccc;
