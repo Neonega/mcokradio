@@ -1,0 +1,100 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+<body style="background-color:4f1313;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mrs. Brown's Boys - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Mrs. Brown's Boys</b>
+</div>
+<div class="tab">
+	<button class="tablinks" onclick="menu(event, '2014specials')" id="defaultOpen">2014 Specials</button>
+  <button class="tablinks" onclick="menu(event, '2020specials')" id="defaultOpen">2020 Specials</button>
+</div>
+
+ <div id="2014specials" class="tabcontent">
+  <div class="thumnall">
+  <img src="gfx/0MB12S2014SE02.jpg"  style="width:213px">
+  <div class="container">
+  <p><a href="0MB12S2014SE02.html" style="color: white"><b>2. Mammy's Gamble</b></a></p>
+  <p>After a spate of burglaries in Finglas, Agnes asks Buster Brady to fit a new alarm system....</p>
+  </div>
+ </div>
+
+ 
+</div>
+
+
+<div id="2020specials" class="tabcontent">
+
+ <div class="thumnall">
+  <img src="gfx/0MB12S2020SE02.jpg"  style="width:213px">
+  <div class="container">
+  <p><a href="0MB12S2020SE02.html" style="color: white"><b>2. Mammy's Memories?</b></a></p>
+  <p>The year starts badly when Winnie’s place is burgled and her mother’s wedding ring taken....</p>
+  </div>
+ </div>
+ 
+  <div class="thumnall">
+  <img src="gfx/0MB12S2020SE01.jpg"  style="width:213px">
+  <div class="container">
+  <p><a href="0MB12S2020SE01.html" style="color: white"><b>1. Mammy of the People</b></a></p>
+  <p>Agnes enters a competition to give an alternative Queen’s speech....</p>
+  </div>
+ </div>
+ 
+</div>
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+<body style="background-color:4f1313;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Goes Wrong Show - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>The Goes Wrong Show</b>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="menu(event, 'series2')" id="defaultOpen">Series 2</button>
+</div>
+<div id="series2" class="tabcontent">
+ <div class="thumnall">
+  <img src="gfx/0GW06E01.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0GW06E01.html" style="color: white"><b>The Nativity</b></a></p>
+  <p>The Goes Wrong Show team present their take on the nativity story.</p>
+  </div>
+ </div>
+ 
+  <div class="thumnall">
+  <img src="gfx/0GW06S02E02.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0GW06S02E02.html" style="color: white"><b>Series 2: 2. The Most Lamentable...</b></a></p>
+  <p>Chris returns to the leadership of the Cornley Drama Society.</p>
+  </div>
+ </div>
+ 
+  <div class="thumnall">
+  <img src="gfx/0GW06S02E03.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0GW06S02E03.html" style="color: white"><b>Series 2: 3. There Is No Escape</b></a></p>
+  <p>An American prison break drama is this week’s offering from the Cornley Drama Society.</p>
+  </div>
+ </div>
+ 
+  <div class="thumnall">
+  <img src="gfx/0GW06S02E04.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0GW06S02E04.html" style="color: white"><b>Series 2: 4. The Cornley Drama Festival Part 1</b></a></p>
+  <p>Chris asks each cast member to put on their own performance.</p>
+  </div>
+ </div>
+ 
+  <div class="thumnall">
+  <img src="gfx/0GW06S02E05.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0GW06S02E05.html" style="color: white"><b>Series 2: 5. The Cornley Drama Festival Part 2</b></a></p>
+  <p>Continuing last-week's Disaster Festival, the drama society put on four more plays.</p>
+  </div>
+ </div>
+</div>
+
+
+
+<div id="series8" class="tabcontent">
+
+</div>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Outlaws - Episode 3 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0O06.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Episode 3</b>
+</div>
+<img src="gfx/0O06S01E03.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=1HP-AoGV63exKWbqUGD4sqd0OahMP7J58" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">Myrna questions what to do with her life when the organisation she founded, the Bristol Justice Collective, seemingly rejects her. This places her in closer conflict with John, who faces mounting pressure at work and at home. Rani runs into trouble with Christian, but despite that, a trip on a booze cruise deepens this budding connection. Gabby and Greg work on plans for her festival, even as Greg’s colleague Spencer, another passenger on the same booze cruise, threatens to lead her astray. And as Christian’s enemies engage in a high-stakes game of cat and mouse, a decision is made about the mysterious bag of cash.</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+<button class="nav_ep_previous">
+  <a href="0O06S01E02.html" style="color: white; text-decoration: none;"><h3 style='text-align: left;'>Previous</h3><p><img src="gfx/0O06S01E02.jpg" width="2000" height="500" style="margin-bottom: 25px;"><b>Series 1</b></p>Episode 2</a>
+  </button>
+  <button class="nav_ep_next">
+    <a href="0O06S01E04.html" style="color: white; text-decoration: none;"><h3 style='text-align: right;'>Next</h3><p><img src="gfx/0O06S01E04.jpg" width="2000" height="500" style="margin-bottom: 25px;"><b> Series 1</b></p>Episode 4</a>
+    </button>
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
