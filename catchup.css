@@ -469,7 +469,7 @@ div.container {
   display: flex;
   padding: 1rem;
   overflow-x: scroll;
-  height: 300px;
+  height: 320px;
 }
 
 .card-list2::-webkit-scrollbar {
@@ -477,7 +477,7 @@ div.container {
   height: 10px;
 }
 .card-list2::-webkit-scrollbar-thumb {
-  
+  background: #0d795e;
   border-radius: 10px;
 }
 
@@ -487,27 +487,33 @@ div.container {
 
 
 .card2 {
-  height: 180px;
-  width: 320px;
-  min-width: 213px;
-  padding: 0rem;
+    height: 121px;
+    width: 215px;
+    min-width: 215px;
+    padding: 0.3rem;
+    border-radius: 16px;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    box-shadow: 2px;
+    border-radius: 16px;
+    padding: 0px;
+}
+
+.card2 img {
   border-radius: 16px;
-  background: #474A2C;
-  display: flex;
-  flex-direction: column;
-  transition: .2s;
-  margin: 0;
-  scroll-snap-align: start;
-  clear: both;
-  position: relative;
-  box-shadow: 2px;
+  max-width:100%;
+  max-height:100%;
 }
 
 .card2:focus-within~.card2, .card2:hover~.card2 {
   transform: translateX(0px);
 }
 
-.card2:hover .card2desc{opacity:1}
+.card-header2:hover .card2desc{opacity:1}
 {}
   .card2:hover  { transform: translateY(-0.3rem);
   box-shadow: 0rem 3px 1rem #00000063;
@@ -516,6 +522,7 @@ div.container {
   opacity: 0;
   transition: opacity .25s cubic-bezier(.12,0,0,1);
 transition: var(--tv-transitions-duration-s) opacity var(--tv-transitions-ease-out);
+padding:6px;
 }
 
 :root {
@@ -541,23 +548,21 @@ transition: var(--tv-transitions-duration-s) opacity var(--tv-transitions-ease-o
 .card-header2 {
   margin-bottom: auto;
   padding-top: 6px;
+  padding-right: 12px;
+  width: 215px;
+  height: 123px;
 }
 
-.card2 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
 
 
 .card-header2 p {
   font-size: 14px;
-  margin: 0 0 1rem;
+  margin: 0 0 0rem;
   color: #ffffff;
-  padding: 12px;
+  padding: 6px;
 }
+
+
 .card-header2 a {
   padding: 4px;
 }
