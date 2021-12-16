@@ -468,9 +468,8 @@ div.container {
 .card-list2 {
   display: flex;
   padding: 1rem;
-  overflow-y: auto;
+  overflow-x: scroll;
   height: 320px;
-  cursor: pointer;
 }
 
 .card-list2::-webkit-scrollbar {
