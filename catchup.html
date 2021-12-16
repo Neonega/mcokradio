@@ -132,7 +132,7 @@
 
 
   <a href="1A13.html" style="text-decoration: none; color:oldlace;">
-  <section class="card-list2">
+  <section class="card-list2" style="overflow-y: auto;>
     <header class="card-header2">
       <article class="card2">
         <img src="gfx/1A13S02E01.jpg" style="width:320px">
@@ -566,4 +566,32 @@ for (i = 0; i < coll.length; i++) {
   gtag('js', new Date());
 
   gtag('config', 'G-BT3M6VXYH2');
+}
+
+const slider = document.querySelector(".card-list2");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", e => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mousemove", e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = x - startX;
+  slider.scrollLeft = scrollLeft - walk;
+});
 </script>
