@@ -477,7 +477,7 @@ div.container {
   height: 10px;
 }
 .card-list2::-webkit-scrollbar-thumb {
-  background: #308f4d;
+  
   border-radius: 10px;
 }
 
