@@ -316,7 +316,7 @@ padding-top: 0px;
 .tablist {
   display: flex;
   padding: 1rem;
-  overflow-x: hidden;
+  overflow-x: scroll;
   cursor: grab;
 }
 
