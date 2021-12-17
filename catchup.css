@@ -313,6 +313,25 @@ padding-top: 0px;
   color: white;
 }
 
+.tablist {
+  display: flex;
+  padding: 1rem;
+  overflow-x: hidden;
+  cursor: grab;
+}
+
+.tablist img {
+  max-width: max-content;
+  height: auto;
+}
+
+.tablist:active {
+  cursor : -webkit-grabbing;
+  cursor : -moz-grabbing;
+  cursor : -o-grabbing;
+  cursor : grabbing;
+}
+
 a:link {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif
@@ -511,7 +530,6 @@ div.container {
   background: linear-gradient(90deg,#636940,#636940 1px,#636940 0,#636940);
 }
 
-
 .card2 {
     height: 121px;
     width: 215px;
@@ -559,6 +577,7 @@ padding:6px;
   --tv-transitions-duration-xl:2s;
   --tv-transitions-ease-in:cubic-bezier(1,0,0,0.12);
   --tv-transitions-ease-out:cubic-bezier(0.12,0,0,1)
+  
  }
 
 .card2-hide {
