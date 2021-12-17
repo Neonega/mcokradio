@@ -33,6 +33,13 @@ body {background-color:#4f1313
   border-top-right-radius: 12px;
 }
 
+.prgmtitlebottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -186,7 +193,7 @@ li a:hover {
   text-align: center;
 }
 .prgmtitle b {
-  background-color: #100e;
+  background-color: #7d2753;
   color: white;
   display: block;
   padding: 15px;
@@ -198,8 +205,7 @@ li a:hover {
 }
 
 .prgmtitlebig b {
-  background: rgb(94,40,38);
-  background: linear-gradient(0deg, rgba(94,40,38,1) 0%, rgba(94,40,38,0.7564655172413793) 38%, rgba(0,212,255,0) 100%); 
+  background: #5E2826;
   color: white;
   display: block;
   padding: 15px;
@@ -208,14 +214,8 @@ li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 34;
   margin-bottom: 0px;
-  z-index:1;
 }
 
-.prgmtitlebig img {
-  max-width: 100%;
-  height: auto;
-  z-index:0;
-}
 
 .catchupdate b {
   background-color: #110e;
@@ -272,7 +272,7 @@ padding-top: 0px;
 .tab {
   overflow: hidden;
   border: 0px solid #ccc;
-  background-color: #5E2826;
+  background-color: #531D1C;
 }
 
 /* Style the buttons inside the tab */
@@ -291,11 +291,15 @@ padding-top: 0px;
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #DB5754;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #7d2753;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 /* Style the tab content */
