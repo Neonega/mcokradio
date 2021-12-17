@@ -132,6 +132,7 @@
 
 
   <a href="1A13.html" style="text-decoration: none; color:oldlace;">
+    <div class=scrolling>
   <section class="card-list2">
     <header class="card-header2">
       <article class="card2">
@@ -233,7 +234,7 @@
                                               </a>
 </section>
 </div>
-
+</div>
 <div id="All" class="tabcontent">
   <h3>Programmes A - Z</h3>
   <h3><u>A</u></h3>
@@ -407,11 +408,15 @@ body {font-family: Arial;}
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #5C9960;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #636940;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 /* Style the tab content */
@@ -566,4 +571,90 @@ for (i = 0; i < coll.length; i++) {
 
   gtag('config', 'G-BT3M6VXYH2');
 }
+</script>
+
+<script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['exports'], factory);
+    } else if (typeof exports !== 'undefined') {
+        factory(exports);
+    } else {
+        factory((root.dragscroll = {}));
+    }
+}(this, function (exports) {
+    var _window = window;
+    var _document = document;
+    var mousemove = 'mousemove';
+    var mouseup = 'mouseup';
+    var mousedown = 'mousedown';
+    var EventListener = 'EventListener';
+    var addEventListener = 'add'+EventListener;
+    var removeEventListener = 'remove'+EventListener;
+    var newScrollX, newScrollY;
+
+    var dragged = [];
+    var reset = function(i, el) {
+        for (i = 0; i < dragged.length;) {
+            el = dragged[i++];
+            el = el.container || el;
+            el[removeEventListener](mousedown, el.md, 0);
+            _window[removeEventListener](mouseup, el.mu, 0);
+            _window[removeEventListener](mousemove, el.mm, 0);
+        }
+
+        // cloning into array since HTMLCollection is updated dynamically
+        dragged = [].slice.call(_document.getElementsByClassName('card-list2'));
+        for (i = 0; i < dragged.length;) {
+            (function(el, lastClientX, lastClientY, pushed, scroller, cont){
+                (cont = el.container || el)[addEventListener](
+                    mousedown,
+                    cont.md = function(e) {
+                        if (!el.hasAttribute('nochilddrag') ||
+                            _document.elementFromPoint(
+                                e.pageX, e.pageY
+                            ) == cont
+                        ) {
+                            pushed = 1;
+                            lastClientX = e.clientX;
+                            lastClientY = e.clientY;
+
+                            e.preventDefault();
+                        }
+                    }, 0
+                );
+
+                _window[addEventListener](
+                    mouseup, cont.mu = function() {pushed = 0;}, 0
+                );
+
+                _window[addEventListener](
+                    mousemove,
+                    cont.mm = function(e) {
+                        if (pushed) {
+                            (scroller = el.scroller||el).scrollLeft -=
+                                newScrollX = (- lastClientX + (lastClientX=e.clientX));
+                            scroller.scrollTop -=
+                                newScrollY = (- lastClientY + (lastClientY=e.clientY));
+                            if (el == _document.body) {
+                                (scroller = _document.documentElement).scrollLeft -= newScrollX;
+                                scroller.scrollTop -= newScrollY;
+                            }
+                        }
+                    }, 0
+                );
+             })(dragged[i++]);
+        }
+    }
+
+      
+    if (_document.readyState == 'complete') {
+        reset();
+    } else {
+        _window[addEventListener]('load', reset, 0);
+    }
+
+    exports.reset = reset;
+}));
+
 </script>
