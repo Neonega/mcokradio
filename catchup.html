@@ -819,7 +819,7 @@ for (i = 0; i < coll.length; i++) {
         }
 
         // cloning into array since HTMLCollection is updated dynamically
-        dragged = [].slice.call(_document.getElementsByClassName('card-list2'));
+        dragged = [].slice.call(_document.getElementsByClassName('card-list'));
         for (i = 0; i < dragged.length;) {
             (function(el, lastClientX, lastClientY, pushed, scroller, cont){
                 (cont = el.container || el)[addEventListener](

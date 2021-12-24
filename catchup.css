@@ -392,6 +392,14 @@ body {max-width: 976px;
     display: flex;
     padding: 1rem;
     overflow-x: scroll;
+	cursor: grab;
+  }
+  
+    .card-list:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
   }
   
   .card-list::-webkit-scrollbar {
