@@ -464,7 +464,8 @@ body {max-width: 976px;
     padding: 12px;
   }
   .card-header a {
-    padding: 12px;
+    padding-left: 12px;
+    display: block;
   }
   
   
