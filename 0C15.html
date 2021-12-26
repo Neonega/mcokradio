@@ -1,0 +1,100 @@
+<html>
+<script src="catchup.js"></script>
+<script src="scroll.js"></script>
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+<body style="background-color:4f1313;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celebrity MasterChef - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+
+
+<style>
+  #prgmimgbig {
+    background-image: linear-gradient(to top, rgba(125,39,83,1) 0%, rgba(125,39,83,0.6572828960685837) 37%, rgba(0,212,255,0) 100%),
+    url('gfx/0C15.jpg');
+    height: 230;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+  }
+</style>
+<div id='prgmimgbig'></div>
+<div class="prgmtitle">
+  <b>Celebrity MasterChef</b>
+</div>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="menu(event, 'Xmas')" id="defaultOpen">Christmas Cook-Off 2021</button>
+</div>
+
+
+<div id="Xmas" class="tabcontent">
+  <div class=scrolling>
+  <section class="tablist">
+  
+<div class="thumnall">
+  <img src="gfx/0C15S01E01.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0C15S01E01.html" style="color: white"><b>Episode 1</b></a></p>
+  <p>Strictly professional Oti Mabuse, reality star Joey Essex, footballer Neil Ruddock, comedian Judi Love and actor Su Pollard create dishes using ingredients found in a seasonal advent calendar.</p>
+  </div>
+</div>
+
+</section>
+</div>
+</div>
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
