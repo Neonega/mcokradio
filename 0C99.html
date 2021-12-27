@@ -1,0 +1,123 @@
+<html>
+<script src="catchup.js"></script> 
+<script src="scroll.js"></script> 
+<head>
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carradine’s Cockney Sing-a-long - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+
+
+<style>
+  #prgmimgbig {
+    background-image: linear-gradient(to top, rgba(125,39,83,1) 0%, rgba(125,39,83,0.6572828960685837) 37%, rgba(0,212,255,0) 100%),
+	
+	
+    url('gfx/0C99.jpg');
+    height: 230;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+  }
+</style>
+<div id='prgmimgbig'></div>
+<div class="prgmtitle">
+  <b>Carradine’s Cockney Sing-a-long</b>
+</div>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="menu(event, '2020')" id="defaultOpen">2020</button>
+  <button class="tablinks" onclick="menu(event, '2021')" id="defaultOpen">2021</button>
+</div>
+<div id="2020" class="tabcontent">
+
+
+
+  <div class=scrolling>
+    <section class="tablist">
+ <div class="thumnall">
+  <img src="gfx/0C99S2020E1911.jpg" style="width:213px">
+  <div class="container">
+  <p><a href="0C99S2020E1911.html" style="color: white"><b>19th Nov, 2020</b></a></p>
+  <p>Self-Isolation Sing-a-long (Week 35)</p>
+  </div>
+  </div>
+
+
+
+
+</section>
+</div>
+</div>
+
+
+
+<div id="2021" class="tabcontent">
+
+
+<div class=scrolling>
+<section class="tablist">
+  <div class="thumnall">
+    <img src="gfx/0C99S2021E1706.jpg" style="width:213px">
+    <div class="container">
+    <p><a href="0C99S2021E1706.html" style="color: white"><b>17th June 2021</b></a></p>
+    <p></p>
+    </div>
+    </div>
+</section>
+
+</div>
+</div>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
