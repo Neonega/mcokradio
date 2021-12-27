@@ -1,0 +1,90 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carradine’s Chrstmas Sing-a-long: 1st December, 2021 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0C99.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Carradine’s Christmas Sing-a-long: 1st December, 2021</b>
+</div>
+<img src="gfx/0C99S2021E0112.jpg" width="2000" height="500">
+ <div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=105uJEyP63QcGJx2KBeocbO9CMLdBB20s" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">Born out of the late night, cider fuelled, sing-a-longs in the Nag's Head bar at Twinwood Vintage Music Festival in 2013 and 2014, Carradine's Cockney Sing-a-long was launched in the Mahogany Bar at Wilton's Music Hall in October 2014.</w>
+
+    <w>Tom Carradine, pianist with Champagne Charlie and the Bubbly Boys and regular accompanist on the London cabaret circuit, decided that he wanted to bring the atmosphere and joyous community singing of the Twinwood sing-a-longs to London, and so created this monthy event.</w>
+    
+    <w><a href="https://www.carradinescockneysingalong.co.uk" style=" color: white;">www.carradinescockneysingalong.co.uk</a></w>
+    <w><b><a href="https://drive.google.com/uc?export=download&id=1-5UQzM4JT3Guz796SBza3BztdIx7502r" style=" color: white;">Download additional materials for this episode: x1 Songbook</a></b></w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>
