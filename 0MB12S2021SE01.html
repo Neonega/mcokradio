@@ -1,0 +1,87 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mrs. Brown's Boys 2020 Special - 1. Mammy's Mechanical Merriment - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0MB12.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>1. Mammy's Mechanical Merriment</b>
+</div>
+<img src="gfx/0MB12S2021SE01.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=1YGq9qXpDPf40mvap_TNQ3bqyTiiP9GrC" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">It’s Christmas in Finglas once again. Agnes has been recruited to the church choir, but she’s under strict instructions from Father McBride that there’s to be no singing and certainly no dancing. That’s not the only thing off limits: a Christmas tree shortage means Buster has to get even more creative than usual to impress Agnes. Meanwhile, Dermot and Buster have organised this year’s festivities at Foley's and are holding a murder mystery night in aid of alcoholic greyhounds. What could possibly go wrong?</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
