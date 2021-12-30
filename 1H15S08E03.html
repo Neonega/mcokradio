@@ -1,0 +1,105 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horrible Histories S08:3. Chaotic Collabs - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="1H15.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>3. Chaotic Collabs</b>
+</div>
+<img src="gfx/1H15S08E03.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=1ufX7Z7LpsrXGyZFAnQ-HgcaQ2v8HJQWQ" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">History is filled with tales of great minds coming together, and collaborating, to achieve incredible things. It’s also full of idiots working together to create an unholy mess, and people forming partnerships for decidedly sinister reasons - welcome to Horrible Histories’ Chaotic Collabs!</w>
+
+    <w>The Black Hand Gang worked together to assassinate Archduke Franz Ferdinand of Austria, and thus trigger a chain of events that led to World War One, but did you know that their collaboration was almost unsuccessful, owing to how many mistakes they made? Here, we reveal how they achieved their aim almost by luck, rather than judgement.</w>
+    
+    <w>Elsewhere, Burke and Hare get jobs as supply business teachers in historical educating, King Akhenaten and Queen Nefertiti collaborate with Sophie and Sebastian in a bid to rejuvenate their Gods, and “Ahoy!” magazine reveals how Admiral Nelson is seemingly enjoying a collaboration with someone else’s wife.</w>
+    
+    <w>We admire one of history’s great duos - Sir Edmund Hillary and Tenzing Norgay - whose journey together to be the first people to reach the summit of Everest is rightly the stuff of legend - but there seems to be some disagreement between them as to who was actually the very first to set foot on the top.</w>
+    
+    <w>The collaboration between Great Britain and America has often been referred to as a 'special relationship' - so special in fact, that Winston Churchill once made President Roosevelt take a meeting with him whilst he was in the bath. Literature and the arts are filled with tales of group creativity - did you know that William Shakespeare sometimes brainstormed his plays? One of these instances surrounds Macbeth, and the decision to change his fairy characters into witches. Finally, we take a musical look at one of the finest ever artistic groups: the romantic poets.</w>
+</div>
+    <div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+<button class="nav_ep_previous">
+  <a href="1H15S08E02.html" style="color: white; text-decoration: none;"><h3 style='text-align: left;'>Previous</h3><p>
+    <img src="gfx/1H15S08E02.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+    <b> Series 8 Episode 02</b></p>Fashion Faux Pas</a>
+</button>
+<button class="nav_ep_next">
+  <a href="1H15S08E04.html" style="color: white; text-decoration: none;"><h3 style='text-align: right;'>Next</h3><p>
+    <img src="gfx/1H15S08E04.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+    <b> Series 8 Episode 04</b></p>Mind Your Manners</a>
+</button>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
