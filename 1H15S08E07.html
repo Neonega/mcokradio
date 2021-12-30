@@ -1,0 +1,109 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horrible Histories S08:Moon Mayhem - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="1H15.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Moon Mayhem</b>
+</div>
+<img src="gfx/1H15S08E07.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://drive.google.com/uc?export=download&id=1sgvdhZ8PnEh9CRuazIq5Uzgnq2_aEBm4" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">Comedian and space nerd Dara O Briain joins Rattus as guest host for a special show that marks the anniversary of the 1969 moon landings.</w>
+
+    <w>For generations, we have looked to the stars and wondered as to the mysteries they contain, and have even used them as a form of celestial advisor, as shown when one Babylonian king bestows his crown upon a peasant because the heavens have foretold that 'the king would die' - so as long as the current king doesn’t happen to be the actual king when the death happens, then surely all would be well?!</w>
+    
+    <w>Copernicus, Galileo and Newton are on hand with a floor-filler about their more scientific thoughts on the heavens and the universe and, in Historical Educating, 17th-century philosopher and supply teacher John Wilkins tells his class about their upcoming field trip, during which they will ride a flying chariot to the moon, so that they can meet the people that live there. </w>
+    
+    <w>We see the first manned rocket-powered flight, which occurred much earlier than you think it probably did and was an ill-advised (from a health and safety perspective at least) stunt at a celebration for a sultan.</w>
+    
+    <w>The Space Race proper gets under way in the 1950s, as America and Soviet Russia fight it out to be the first to harness that rocket power, and use it to get their people into space. We see Soviet Russia’s fearsome Sputnik satellite (the first to reach space), and the even more scary Ivan Ivanovich - a mannequin that actually floated in space while reciting a recipe for Borscht. Owing to this Russian success, the Americans panic and enlist the help of Sophie and Sebastian to come up with some ideas as to how they can take the lead in the Space Race - suggestions include 'space pool', so it’s fair to say that results are mixed, at best. </W>
+    
+    <W>We also discover that Yuri Gagarin’s dad was less than impressed with his son being the first man in space, and meet America’s solution to finally getting ahead in the race, and getting a man on the moon: a 'computer' called Katherine Johnson. </W>
+    
+  </w>wFinally, we learn that the Apollo 10 crew faced the horror of someone’s poo floating around in the cockpit, and the episode ends with a swinging tune from JFK and Khrushchev about 'flying to the moon'.</w>
+</div>
+    <div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+<button class="nav_ep_previous">
+  <a href="1H15S08E06.html" style="color: white; text-decoration: none;"><h3 style='text-align: left;'>Previous</h3><p>
+    <img src="gfx/1H15S08E06.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+    <b> Series 8 Episode 06</b></p>Bizarre Beasts</a>
+</button>
+<button class="nav_ep_next">
+  <a href="1H15S08E08.html" style="color: white; text-decoration: none;"><h3 style='text-align: right;'>Next</h3><p>
+    <img src="gfx/1H15S08E08.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+    <b> Series 8 Episode 08</b></p>Putrid Politics</a>
+</button>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
