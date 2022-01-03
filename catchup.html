@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="catchup.css">
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>M.C.O.K. Relive!</title>
@@ -493,6 +494,21 @@
 
 <div id="Relive" class="tabcontent">
   <h3>Relive!</h3>
+
+
+  
+<div class="catchupdate">
+  <b>Sun 2nd Jan 2022</b>
+  </div>
+ <div class="prgmtitle">
+  <b>M.C.O.K. TV on M.C.O.K. Radio 2 <p>(full broadcast)</p></b>
+   </div>
+  <div class="ready-player-1" style="margin-bottom: 12px;">
+    <audio>
+<source src="https://dl.dropboxusercontent.com/s/oi6303b4vb4sbi2/Sun%202nd%20January%202022.MP3?dl=0" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
 
   <div class="catchupdate">
     <b>Sat 1st Jan 2022</b>
@@ -1196,4 +1212,12 @@ for (i = 0; i < coll.length; i++) {
 
   gtag('config', 'G-BT3M6VXYH2');
 }
+</script>
+
+</script>
+<script src="audioplayer.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+    });
 </script>
