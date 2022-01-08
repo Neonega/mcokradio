@@ -1,6 +1,9 @@
-body {max-width: 976px;
-  margin: 0 Auto;
-  padding: 16px
+body {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px
   }
   body {background-color:#4f1313
   }
@@ -192,6 +195,7 @@ body {max-width: 976px;
     font-size: 20;
     text-align: center;
   }
+
   .prgmtitle b {
     background-color: #7d2753;
     color: white;
@@ -202,8 +206,45 @@ body {max-width: 976px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 34;
     margin-bottom: 0px;
+    
   }
   
+  .series h3 {
+    background-color: #7d2753;
+    color: white;
+    display: block;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-bottom: 6px;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    margin: 0px;
+  }
+
+  .series a {
+    background-color: #7d2753;
+    color: white;
+    display: block;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: -17px;
+  }
+
+  .prgmtitle w {
+    background-color: #7d2753;
+    color: white;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 40px;
+     }
+
   .prgmtitlebig b {
     background: #5E2826;
     color: white;
@@ -312,34 +353,7 @@ body {max-width: 976px;
     text-decoration: none;
     color: white;
   }
-  
-  .tablist {
-    display: flex;
-    padding: 1rem;
-    overflow-x: scroll;
-    cursor: grab;
-  }
-  
-  .tablist img {
-    max-width: max-content;
-    height: auto;
-  }
-  
-  .tablist:active {
-    cursor : -webkit-grabbing;
-    cursor : -moz-grabbing;
-    cursor : -o-grabbing;
-    cursor : grabbing;
-  }
-  
-  .tablist::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-  .tablist::-webkit-scrollbar-thumb {
-    background: #42100f;
-    border-radius: 10px;
-  }
+
   
   a:link {
     text-decoration: none;
@@ -368,13 +382,35 @@ body {max-width: 976px;
       
   }
   
-  div.thumnall {
-    display: inline-block;
-    width: 213px;
-    background-color: #421b4d;
-    margin-bottom: 25px;
-    margin-right: 10px;
+
+
+  .thumnall {
     
+    width: 213px;
+    min-width: 213px;
+    padding: 0rem;
+    background: #421b4d;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: -16px;
+    margin-left: 0px;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    box-shadow: 0px 0px 14px rgb(0, 0, 0);
+  }
+  
+  .thumnall:focus-within~.card, .card:hover~.card {
+    transform: translateX(0px);
+  }
+  
+  .thumnall:hover {
+    transform: translateX(-0.5rem);
+  }
+  
+  .thumnall:not(:first-child) {
+    margin-left: 12px;
   }
     
   div.container {
@@ -385,7 +421,34 @@ body {max-width: 976px;
     padding: 0px 10px;
   }
   
+  .tablist {
+    display: flex;
+    padding: 1rem;
+    overflow-x: scroll;
+  	cursor: grab;
+    background-color: #7d2753;
+  }
+
+  .tablist img {
+    max-width: max-content;
+    height: auto;
+  }
   
+  .tablist:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+  }
+  
+  .tablist::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .tablist::-webkit-scrollbar-thumb {
+    background: #42100f;
+    border-radius: 10px;
+  }
   
   
   .card-list {
