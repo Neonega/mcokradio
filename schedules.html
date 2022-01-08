@@ -1126,6 +1126,10 @@ for (i = 0; i < coll.length; i++) {
     background-color: #1c0721;
     overflow: auto;
     white-space: nowrap;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
   div.scrollmenu button {
