@@ -15,24 +15,36 @@
 <div class="banner3">
   <p class="active"></p>
 </div>
+
+  <style>
+    #prgmimgbig {
+      background-image: linear-gradient(0deg, rgba(65,90,119,1) 0%, rgba(65,90,119,0.6404761733795081) 37%, rgba(65,90,119,0) 100%),
+      url('gfx/2BR01.jpg');
+      height: 300;
+      background-size: cover;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+
+</div>
+
+<a href="2BR01.html">
+  <div id='prgmimgbig'></div>
+    <div class="featuredmain">
+  <b>Blade Runner 2049</b></a>
+  <p>One of the new, compliant replicants, K, is tasked with tracking and 'retiring' runaway older models. But then a discovery he makes disturbs the authorities and disrupts his own sense of self. Seeking answers, he goes after the one person he suspects can help.</p>
+</div>
+
 <div class="tab">
   <button class="tablinks" onclick="menu(event, 'Home')" id="defaultOpen">Relisten</button>
   <button class="tablinks" onclick="menu(event, 'Relive')" id="defaultOpen">Relive</button>
   <button class="tablinks" onclick="menu(event, 'All')">Programmes A - Z</button>
 </div>
+
+
+
 <div id="Home" class="tabcontent">
-  <h3>Featured</h3>
-   <div class="featuredmain">
-    <a href="2BR01.html" style="color: white">
-  <img src="gfx/2BR01.jpg" style="100%">
-  
-  <div class="featured">
-  <b>Blade Runner 2049</b></a>
-  <p>One of the new, compliant replicants, K, is tasked with tracking and 'retiring' runaway older models. But then a discovery he makes disturbs the authorities and disrupts his own sense of self. Seeking answers, he goes after the one person he suspects can help.</p>
-</div>
-  </div>
-
-
 
     
   <section class="card-list">
@@ -143,6 +155,30 @@
 
     <h3 style="padding-left: 28px; font-size: 20;">New</h3>
 <section class="card-list">
+
+  <article class="card">
+    <header class="card-header">
+      <img src="gfx/0C99.jpg" style="width:213px">
+      <b><a href="0C99.html" style="color: white">Carradine’s Cockney Sing-a-long</a></b>
+      <p>New episodes are streaming now</p>
+    </header>
+  </article>
+
+  <article class="card">
+    <header class="card-header">
+      <img src="gfx/1H15S08E09.jpg" style="width:213px">
+      <b><a href="1H15S08E09.html" style="color: white">Horrible Histories - Heroic Home Front</a></b>
+      <p>WWII on the home front, including Churchill’s secret loo.</p>
+    </header>
+  </article>
+
+  <article class="card">
+    <header class="card-header">
+      <img src="gfx/0M16.jpg" style="width:213px">
+      <b><a href="0M16.html" style="color: white">MasterChef: The Professionals</a></b>
+      <p>New Episodes are available to stream now</p>
+    </header>
+  </article>
 
   <article class="card">
     <header class="card-header">
@@ -950,11 +986,16 @@ div.featured{
   background-color: #415A77;
   color: white;
   display: block;
-  padding: 0px;
-  margin-bottom: 24px;
+  padding: 12px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.featuredmain a {
+  text-decoration: none;
+  color: white;
+}
+
 .bottom-left {
   position: absolute;
   bottom: 8px;
@@ -988,8 +1029,10 @@ body {font-family: Arial;}
   overflow: hidden;
   border: 0px solid #ccc;
   background-color: #415A77;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .btn_play {
