@@ -1,0 +1,92 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Objective:Health - Omicron: The Deadliest Decepticon the Autobots Have Ever Faced - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="3S99.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Objective:Health - Omicron: The Deadliest Decepticon the Autobots Have Ever Faced</b>
+</div>
+<img src="gfx/3S99211221.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://dl.dropboxusercontent.com/s/kavh8cf11sfisua/20211221obh-omicron-the-deadliest-decepticon-the-autobots-have-ever-faced.mp3?dl=0" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">Omicron is the most merciless and powerful Decepticon ever to emerge from the planet Cybertron, driven by a need to destroy all humans. But he can't be seen, smelled or heard - you may be being attacked by Omicron right now, and you wouldn't even know it! Ever! Unless you had a test to determine that you were being attacked by him. But even then, you wouldn't be sure. That's how evil he is.</w>
+
+    <w>Omicron has the power to kill all those who dare to defy our leader's lockdown orders, no matter how ridiculous they may seem. He can overrun hospitals and health care facilities even without increasing total admissions. He can unflatten curves at the snap of his evil fingers. The only thing he hungers for more than killing people who don't wear diapers on their faces, go out after 8pm or socially mix with people they don't have to, is the complete and total destruction of Christmas (Omicron hates Christmas).</w>
+    
+    <w>Do the Autobots have the power to destroy Omicron? Will their ultimate weapon, "The Science," be enough to take down their mightiest foe? Will the complete eradication of small businesses and personal livelihood prove to be enough to stop this evil menace? Join us on this episode of Objective:Health as we discuss the absolutely terrifying spectre of OMICRON. If you're not scared, you should be!</w>
+    
+</div>
+    <div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
