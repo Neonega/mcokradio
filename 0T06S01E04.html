@@ -1,0 +1,98 @@
+<html>
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two Doors Down: Episode 4 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0T06.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>Two Doors Down: Episode 4</b>
+</div>
+<img src="gfx/0T06S01E04.jpg" width="2000" height="500">
+<div class="ready-player-1">
+        <audio>
+  <source src="https://dl.dropboxusercontent.com/s/9qs3tpsvmtwn6w5/Two_Doors_Down_Series_1_-_04._Episode_4_p03k32qq_audiodescribed.m4a?dl=0" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div class="banner3small">
+	<w style="padding-left: 12px;">It's Eric's birthday coming up and all he wants is a bit of peace and quiet. Cathy and Colin decide to pop in early as they're going to be away 'sailing'. Christine and Sophie have just returned from a funeral and Christine needs to tell everyone what fun it's been. Ian and Jaz have completely forgotten that it's Eric's birthday. And there's great embarrassment amongst the Bairds when their old family photo is dragged out of the loft.</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+
+
+<button class="nav_ep_previous">
+  <a href="0T06S01E03.html" style="color: white; text-decoration: none;"><h3 style='text-align: left;'>Previous</h3><p>
+    <img src="gfx/0T06S01E03.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+    <b> Series 1</b></p>Episode 3</a>
+  </button>
+  <button class="nav_ep_next">
+    <a href="0T06S01E05.html" style="color: white; text-decoration: none;"><h3 style='text-align: right;'>Next</h3><p>
+      <img src="gfx/0T06S01E05.jpg" width="2000" height="500" style="margin-bottom: 25px;">
+      <b> Series 1</b></p>Episode 5</a>
+  </button>
+
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+
+</body>
+</html>
