@@ -1,0 +1,90 @@
+<html>
+
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOTP 1984 Big Hits - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0TP99.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>TOTP 1984 Big Hits</b>
+</div>
+<img src="gfx/0TP1984S.jpg" width="2000" height="500">
+
+<div class="ready-player-1">
+ <audio>
+  <source src="https://dl.dropboxusercontent.com/s/05auy71y8yjh01m/Top_of_the_Pops_-_1984_-_Big_Hits_b08skpzg_original.m4a?dl=0" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<div class="banner3small">
+	<w style="padding-left: 12px;">Celebrating the big hits from a big year in British pop. The big hitters in this compilation are performed by the likes of The Smiths, Duran Duran, Sade, The Weather Girls, Wham! and Bronski Beat, to name a few.</w>
+
+    <w>Further stellar appearances come from the TOTP debuts of iconic Americans Madonna, Miami Sound Machine and Cyndi Lauper, who runs riot in the studio.</w>
+    
+    <w>Frankie Goes to Hollywood celebrate their 1984 chart dominance with one of their celebrated renditions of Two Tribes, while we couldn't let you forget a little ditty from Black Lace - you'll be singing this for days... you have been warned!</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>

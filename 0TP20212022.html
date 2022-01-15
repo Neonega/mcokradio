@@ -1,0 +1,90 @@
+<html>
+
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Year Special: 2021/2022 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+<button class="backtoprgm">
+	<a href="0TP99.html" style="color: white; text-decoration: none;">Back</a>
+</button>
+<button class="back">
+	<a href="catchup.html" style="color: white; text-decoration: none;">Relive! Home</a>
+</button>	
+<div class="prgmtitle">
+	<b>New Year Special: 2021/2022</b>
+</div>
+<img src="gfx/0TP20212022.jpg" width="2000" height="500">
+
+<div class="ready-player-1">
+ <audio>
+  <source src="https://dl.dropboxusercontent.com/s/ykwsso1jyqo68q2/Top_of_the_Pops_-_New_Year_Special_2021_2022_m0012ws8_original.m4a?dl=0" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<div class="banner3small">
+	<w style="padding-left: 12px;">As we all get excited for the arrival of 2022, Radio 1 presenters Clara Amfo and Jordan North guide us through an early celebration on New Year’s Eve with some of the biggest hits of the year alongside rising stars set for the top in 2022. </w>
+
+  <w>This year’s show features studio performances from Becky Hill, Mabel, Sam Fender, Mahalia ft. AJ Tracey, Dermot Kennedy, Lola Young and more.</w>
+    
+  <w>As well as brand new performances, we look back at the biggest musical stories and moments of 2021 and some very special performances from Billie Eilish, Rag‘n’Bone Man, Arlo Parks, Ed Sheeran and more.</w>
+</div>
+<div class="banner3">
+	<b style="font-size: 16;">Availability: over a month</b>
+</div>
+<ul>
+  <li><a href="index.html">M.C.O.K. Home</a>
+  <li><a href="schedules.html">Schedules</a></li>
+  </ul>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>
