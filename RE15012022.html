@@ -1,0 +1,113 @@
+<html>
+
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.C.O.K. Radio 2: 15th Jan, 2022 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+
+<div class="prgmtitle">
+	<b>M.C.O.K. Radio 2: 15th Jan, 2022</b>
+</div>
+<div class="ready-player-1">
+        <audio>
+            <source src="https://dl.dropboxusercontent.com/s/l688m8an5xcwoo2/Sat%2015th%20January%202021.MP3?dl=0" type="audio/mpeg">
+			Your browser does not support the audio element.
+        </audio>
+</div>
+
+<div class="banner3small">
+  <table id="schedule">
+    <tr>
+      <td>18:00</td>
+      <td>Top of the Pops: 1984 Big Hits</td>
+    </tr>
+    <tr>
+      <td>19:00</td>
+      <td>Top of the Pops: 1988 Christmas Special</td>
+    </tr>
+    <tr>
+      <td>20:00</td>
+      <td>Carradine's Cockney Sing-a-long: 20th May 2021</td>
+    </tr>
+    <tr>
+      <td>21:00</td>
+        <td>Objective:Health - Omicron: The Deadliest Decepticon the Autobots Have Ever Faced</td>
+    </tr>
+      <td>21:30</td>
+      <td>Doctor Who - Eve of the Daleks</td>
+    </tr>
+    <tr>
+      <td>22:30</td>
+      <td>Vienna Blood S02E03</td>
+    </tr>
+    <tr>
+      <td>00:00</td>
+      <td>Two Doors Down S01E06</td>
+    </tr>
+     <tr>
+      <td>00:30</td>
+      <td>Two Doors Down S02E01</td>
+    </tr>
+     <tr>
+      <td>01:00</td>
+      <td>Horrible Histories s08e14</td>
+    </tr>
+     <tr>
+      <td>01:30</td>
+      <td>M.C.O.K. Radio 2</td>
+    </tr>
+  </table>  
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>
