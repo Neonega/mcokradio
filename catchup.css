@@ -271,6 +271,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14;
   }
+
+  .catchupdatered {
+    background-color: rgba(230, 16, 44, 0.933);
+    width: auto;
+    color: white;
+    display: block;
+    padding: 14px;
+    text-align: left
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+  }
+
   .greenbannersmall b {
     background-color: #9BC53D;
     color: white;
