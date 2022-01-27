@@ -16,17 +16,77 @@
 <div class="banner1">
   <a class="active">The Official website of 87.2 Mhz</a>
 </div>
-<a class="active" src="" style="text-decoration:none;"><img src="gfx/0VB03.jpg" width="2000" height="500">
-<div class="featured">
-  Vienna Blood: All episodes are available to catchup now on Relive!</a>
-</div>
-</body>
+
+<style>
+  .progimgmain {
+    {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+</style>
+
+<html> 
+  <div id="progimgmain">
+    <a href="0VB03.html">
+    <img src="gfx/0VB03.jpg" class="stretch" alt="" />
+  </div>
+  <div class="imgborder">
+    </div>
+    <div class="banner2">
+    <h2>Vienna Blood</h2><p>All episodes are available to catchup now on Relive!</p>
+  </a>  
+  </div>
+
+  <style>
+    .progimgmain {
+      width: 100%; 
+      height: 100%; 
+      position: absolute; 
+      left: 0px; 
+      top: 0px; 
+      z-index: 0;
+      
+  }
+  
+    .textleft {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color:white;
+      top: 8px;
+      left: 16px;
+    }
+
+  .stretch {
+      width:100%;      
+  }
+  
+  .imgborder {
+    background: linear-gradient(0deg, rgba(18,34,56,1) 13%, rgba(18,34,56,0.7766385882088307) 33%, rgba(18,34,56,0.6080992623661341) 56%, rgba(18,34,56,0.2120318466357971) 90%, rgba(18,34,56,0) 100%);
+  height: 213;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  margin-top: -213px;
+  }
+  </style>
+
+
 
 
 <div class="row">
   <div class="column" style="background-color:#white;">
-<div class="banner2">
-  <a class="active">Next Broadcast: Thursday 27th January, 2022</a>
+<div class="dates">
+  <p>Thursday 27th January, 2022</p>
 </div>	
 <table id="schedule">
   <tr>
@@ -77,8 +137,9 @@
 
 <div class="row">
   <div class="column" style="background-color:#white;">
-    <div class="banner2">
-      <a class="active">Sunday 30th January, 2022</a>
+    <div class="dates">
+      <p>Sunday 30th January, 2022</p>
+      </div>
       <table id="schedule">
         <tr>
           <td>12:30</td>
@@ -151,8 +212,8 @@
 
   <div class="row">
     <div class="column" style="background-color:#white;">
-      <div class="banner2">
-        <a class="active">full-day broadcasts are streaming now on Relive!</a>
+      <div class="dates">
+        <p>full-day broadcasts are streaming now on Relive!</p>
 </div>
 </div>
 </div>
@@ -160,14 +221,6 @@
 
 
 
-<style>
-img {
-  max-width: 100%;
-  height: auto;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-</style>
 <style>
 ul {
   list-style-type: none;
@@ -221,15 +274,20 @@ li a:hover {
 </style>
 <style>
 .banner2 {
+  background-color: #122238;
+  color:white;
   display: block;
-  position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
+  padding: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.banner2 a {
+  color: white;
+}
+
 .title a {
-  background-color: AF125A;
+  background-color: #AF125A;
   color: white;
   display: block;
   padding: 12px;
@@ -248,11 +306,14 @@ li a:hover {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-.banner2 a {
-  background-color: #123a;
-  color: white;
+
+
+.dates {
+  background-color: rgba(17, 34, 51, 0.699);
+  color:white;
   display: block;
-  padding: 12px;
+  padding: 1px;
+  padding-left: 27px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   position: -webkit-sticky; /* Safari */
@@ -260,19 +321,6 @@ li a:hover {
     top: 0;
     z-index: 100;
 }
-.banner1 a {
-  background-color: #123e;
-  color: white;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;  
-  
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-bottom: 10px;
-}
-
 
 .bannerxmas a {
   background-color: #16912f;
@@ -290,9 +338,7 @@ li a:hover {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;  
   
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-bottom: 10px;
+
 }
 </style>
 <style>
@@ -302,19 +348,7 @@ li a:hover {
   width: 100%;
 }
 
-#schedule td, #customers th {
-  border: 0px solid #ddd;
-  padding: 10px;
-}
 
-#schedule tr:nth-child(even){background-color: #f2f2f2;}
-#schedule th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #123e;
-  color: white;
-}
 </style>
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -329,7 +363,7 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.display = "block";
     }
-  });
+  }
 }
 </script>
 </html>

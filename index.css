@@ -1,15 +1,16 @@
-body {max-width: 976px;
-margin: 0 Auto;
-padding: 16px
+body {
+margin-top: 12px;
+margin-left: 0;
+margin-right: 0;
+padding: 0px
 }
-body {background-color:#ECE8E8
+body {background-color:rgb(37, 66, 94)
 }
 
-<style>
 * {
   box-sizing: border-box;
 }
-
+ 
 .row {
   display: flex;
   margin-left:-5px;
@@ -21,20 +22,25 @@ body {background-color:#ECE8E8
   margin-bottom: 12px;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
+#schedule td {
+  border: 0px solid #ddd;
+  padding: 15px;
+  padding-left: 30px;
+  color:white;
 }
 
-th, td {
+#schedule tr:nth-child(even){background-color: rgb(15, 42, 70);}
+#schedule th {
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: left;
-  padding: 16px;
+  
+  background-color: #123e;
+  color: #d3357f;
 }
 
-tr:nth-child(even) {
-  background-color: #white;
-}
-</style>
+.imgborder {
 
+  height: auto;
+  width: auto;
+}
