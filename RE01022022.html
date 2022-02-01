@@ -1,0 +1,115 @@
+<html>
+
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.C.O.K. Radio 2: Tue 1st Feb, 2022 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+
+<div class="prgmtitle">
+	<b>M.C.O.K. Radio 2: Tue 1st Feb, 2022</b>
+</div>
+<div class="ready-player-1">
+        <audio preload='none'>
+            <source src="https://dl.dropboxusercontent.com/s/2rem57jdtohts9d/PROG47%20Tue%201st%20Feb%202022.mp3?dl=0" type="audio/mpeg">
+			Your browser does not support the audio element.
+        </audio>
+</div>
+<a href="https://dl.dropboxusercontent.com/s/2rem57jdtohts9d/PROG47%20Tue%201st%20Feb%202022.mp3?dl=0" type="audio/mpeg" style="text-decoration: none; color: white;">External Player link (if HTML5 player ramdonly stops streaming)</a>
+
+<div class="banner3small">
+  <table id="schedule">
+    <tr>
+      <td>18:00</td>
+      <td>Horrible Histories S09E06 (27 min)</td>
+    </tr>
+    <tr>
+      <td>18:30</td>
+      <td>NewsReal Short: UK Official Stats Reveal How Many People Actually Died From Covid-19 (13 min)</td>
+    </tr>
+    <tr>
+      <td>18:43</td>
+      <td>The M.C.O.K. 1st anniversary playlist - The best of Pira FM, M.C.O.K. Radio 2 since Feb, 2021 (Continued)(3 hours 33 min)</td>
+    </tr>
+    <tr>
+      <td>22:15</td>
+      <td>NewsReal Short: UK Official Stats Reveal How Many People Actually Died From Covid-19 (replay) (13 min)</td>
+    </tr>
+    <tr>
+      <td>22:27</td>
+      <td>Horrible Histories S09E06 (replay) (27 min)</td>
+    </tr>
+    <tr>
+      <td>22:54</td>
+      <td>Around the World in 80 Days - Episode 5 (48 min)</td>
+    </tr>
+    <tr>
+      <td>23:43</td>
+      <td>Two Doors Down S02E03 (29 min)</td>
+    </tr>
+    <tr>
+      <td>00:12</td>
+      <td>Top of the Pops: 25-12-1989 (57 min)</td>
+    </tr>
+    <tr>
+      <td>01:09</td>
+      <td>NewsReal Short: UK Official Stats Reveal How Many People Actually Died From Covid-19 (replay) (13 min)</td>
+    </tr>
+    <tr>
+      <td>01:25</td>
+      <td>The M.C.O.K. 1st anniversary playlist (continued)</td>
+    </tr>
+    </table>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>
