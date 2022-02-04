@@ -1,0 +1,107 @@
+<html>
+
+<script src="catchup.js"></script> 
+<head>
+<link rel="stylesheet" type="text/css" href="audioplayer.css">
+<link rel="stylesheet" href="catchup.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.C.O.K. Radio 2: Thu 3rd February, 2022 - Relive!</title>
+<div class="title">
+  <b class="active">M.C.O.K. <i>Relive!</i></b>
+</div>
+<div class="banner3small">
+  <b class="active">In case you couldn't catch the DX on 87.2 MHZ</b>
+</div>
+
+<div class="prgmtitle">
+	<b>M.C.O.K. Radio 2: Thu 3rd February, 2022</b>
+</div>
+<div class="ready-player-1">
+        <audio preload='none'>
+            <source src="https://dl.dropboxusercontent.com/s/9zw4olsor22xwve/PROG48%20Thu%203rd%20Feb%202022.mp3?dl=0" type="audio/mpeg">
+			Your browser does not support the audio element.
+        </audio>
+</div>
+<a href="" type="audio/mpeg" style="text-decoration: none; color: white;">External Player link (if HTML5 player ramdonly stops streaming)</a>
+
+<div class="banner3small">
+  <table id="schedule">
+    <tr>
+      <td>18:00</td>
+      <td>Horrible Histories S09E07 (28 min)</td>
+    </tr>
+    <tr>
+      <td>18:28 </td>
+      <td>Two Doors Down S02E04 (28 min)</td>
+    </tr>
+    <tr>
+      <td>18:55</td>
+      <td>The M.C.O.K. 1st anniversary playlist - The best of Pira FM, M.C.O.K. Radio 2 since Feb, 2021 (continued) (4 hours 5 min)</td>
+    </tr>
+    <tr>
+      <td>23:00</td>
+      <td>NewsReal: Ukraine Gambit - US Attempting to Destroy Russia (1 hr 1 min)</td>
+    </tr>
+    <tr>
+      <td>00:01</td>
+      <td>Horrible Histories S09E07 (replay) (28 min)</td>
+    </tr>
+    <tr>
+      <td>00:29</td>
+      <td>Around the World in 80 Days - Episode 6 (48 min)</td>
+    </tr>
+    <tr>
+      <td>01:20</td>
+      <td>Carradine's Cockney Sing-a-long: 2nd February, 2022 (1hr 5min)</td>
+    </tr>
+    <tr>
+      <td>02:20</td>
+      <td>The M.C.O.K. 1st anniversary playlist (continued)</td>
+    </tr>
+</table>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function menu(evt, selections) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(selections).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script src="audioplayer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { showTooltips: true, showDownloadButton: false, enableKeystrokes: true });
+        });
+    </script>
+</body>
+</html>
